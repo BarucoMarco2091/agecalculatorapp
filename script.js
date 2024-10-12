@@ -9,7 +9,7 @@ button.addEventListener('click', function calculate() {
     const newYear = document.querySelector('.newYear');
     const now = moment();
     if (isNaN(day) || isNaN(month) || isNaN(year)) {
-        warning.innerHTML = 'This field is required';
+        warning.innerHTML = 'These fields are required';
         warning.style.color = 'red';
     } else {
         const updatedDay = now.subtract(day, 'days');
