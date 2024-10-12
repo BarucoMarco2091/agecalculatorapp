@@ -20,14 +20,30 @@ body {
   margin-top: 5dvh;
   border-radius: 10px 10px 100px 10px;
 }
+@media screen and (max-width: 480px) {
+  #container {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+  }
+}
 #container .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 }
+@media screen and (max-width: 480px) {
+  #container .card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 #container .card-grid .card {
   margin-left: 5vh;
   margin-top: 5vh;
+}
+#container .card-grid .card .res {
+  font-family: "Poppins", serif;
 }
 #container .card-grid .card label {
   display: block;
@@ -61,6 +77,12 @@ body {
   left: 100dvh;
   cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+  #container .card-button {
+    position: relative;
+    left: 30dvh;
+  }
+}
 #container #results {
   display: flex;
 }
@@ -73,6 +95,11 @@ body {
   font-size: 5rem;
   color: hsl(259, 100%, 65%);
 }
+@media screen and (max-width: 480px) {
+  #container #results .numbers p {
+    font-size: 2.5rem;
+  }
+}
 #container #results .time {
   margin-right: 2dvh;
   flex: 5;
@@ -83,4 +110,9 @@ body {
   margin-right: 5dvh;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  #container #results .time p {
+    font-size: 2.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
