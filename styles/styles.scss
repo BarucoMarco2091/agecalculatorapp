@@ -17,31 +17,52 @@ $offBlack: hsl(0, 0%, 8%);
 body {
     background-color: $offWhite;
 
-    #container {
-        display: flex;
-        flex-direction: column;
-        background-color: $white;
-        width: 1000px;
-        height: 400px;
-        margin: auto;
-        border-radius: 10px 10px 100px 10px;
+}
 
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    width: 150dvh;
+    height: 70dvh;
+    margin: auto;
+    border-radius: 10px 10px 100px 10px;
 
-            .card {
-                margin-left: 5vh;
-                margin-top: 5vh;
-            }
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
 
-            .card label {
-                display: block;
-                margin-bottom: 5px;
-                font-family: 'Poppins', serif;
-            }
+        .card {
+            margin-left: 5vh;
+            margin-top: 5vh;
         }
 
+        .card label {
+            display: block;
+            margin-bottom: 5px;
+            font-family: 'Poppins', serif;
+        }
+
+        .card input {
+            height: 7dvh;
+            width: 20dvh;
+        }
+
+        .card input::placeholder {
+            font-family: 'Poppins', serif;
+            font-size: 1.25rem;
+            padding-left: 2dvh;
+        }
+    }
+
+    .card-button {
+        margin-top: 2dvh;
+        margin: auto;
+        width: 10dvh;
+        height: 10dvh;
+        border-radius: 50%;
+        color: $white;
+        background-color: $purple;
     }
 }

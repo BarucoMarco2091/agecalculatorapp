@@ -9,26 +9,50 @@
 body {
   background-color: hsl(0, 0%, 94%);
 }
-body #container {
+
+#container {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
-  width: 1000px;
-  height: 400px;
+  width: 150dvh;
+  height: 70dvh;
   margin: auto;
   border-radius: 10px 10px 100px 10px;
 }
-body #container .card-grid {
+#container .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-body #container .card-grid .card {
+#container .card-grid .card {
   margin-left: 5vh;
   margin-top: 5vh;
 }
-body #container .card-grid .card label {
+#container .card-grid .card label {
   display: block;
   margin-bottom: 5px;
   font-family: "Poppins", serif;
+}
+#container .card-grid .card input {
+  height: 7dvh;
+  width: 20dvh;
+}
+#container .card-grid .card input::-moz-placeholder {
+  font-family: "Poppins", serif;
+  font-size: 1.25rem;
+  padding-left: 2dvh;
+}
+#container .card-grid .card input::placeholder {
+  font-family: "Poppins", serif;
+  font-size: 1.25rem;
+  padding-left: 2dvh;
+}
+#container .card-button {
+  margin-top: 2dvh;
+  margin: auto;
+  width: 10dvh;
+  height: 10dvh;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(259, 100%, 65%);
 }/*# sourceMappingURL=styles.css.map */
