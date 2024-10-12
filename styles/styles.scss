@@ -23,15 +23,16 @@ body {
     display: flex;
     flex-direction: column;
     background-color: $white;
-    width: 150dvh;
+    width: 120dvh;
     height: 70dvh;
     margin: auto;
+    margin-top: 5dvh;
     border-radius: 10px 10px 100px 10px;
 
     .card-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 5px;
 
         .card {
             margin-left: 5vh;
@@ -47,6 +48,7 @@ body {
         .card input {
             height: 7dvh;
             width: 20dvh;
+            border-radius: 1dvh;
         }
 
         .card input::placeholder {
@@ -58,11 +60,43 @@ body {
 
     .card-button {
         margin-top: 2dvh;
-        margin: auto;
         width: 10dvh;
         height: 10dvh;
         border-radius: 50%;
+        border: none;
         color: $white;
         background-color: $purple;
+        position: relative;
+        left: 100dvh;
+        cursor: pointer;
+    }
+
+    #results {
+        display: flex;
+
+        .numbers {
+            margin-right: 2dvh;
+            flex: 1;
+
+            p {
+                margin-left: 5dvh;
+                font-size: 5rem;
+                color: $purple;
+            }
+        }
+
+        .time {
+            margin-right: 2dvh;
+            flex: 5;
+
+            p {
+                font-size: 4rem;
+                color: $offBlack;
+                margin-right: 5dvh;
+                font-family: 'Poppins', sans-serif;
+                font-weight: bold;
+            }
+        }
+
     }
 }

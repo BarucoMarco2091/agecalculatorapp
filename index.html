@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+
     <title>Age Calculator App</title>
 </head>
 
@@ -15,29 +17,32 @@
         <div id="container">
             <div class="card-grid">
                 <div class="card">
-                    <label for="">DAY</label>
+                    <label for="day">DAY</label>
                     <input type="text" name="day" id="day" placeholder="DD">
+                    <div class="res"></div>
                 </div>
                 <div class="card">
-                    <label for="">MONTH</label>
+                    <label for="month">MONTH</label>
                     <input type="text" name="month" id="month" placeholder="MM">
+                    <div class="res"></div>
                 </div>
                 <div class="card">
-                    <label for="">YEAR</label>
+                    <label for="year">YEAR</label>
                     <input type="text" name="year" id="year" placeholder="YYYY">
+                    <div class="res"></div>
                 </div>
             </div>
             <button class="card-button" onclick="calculate()"><i class="fa-solid fa-arrow-down"></i></button>
             <div id="results">
                 <div class="numbers">
-                    <p>--</p>
-                    <p>--</p>
-                    <p>--</p>
+                    <p class="newDay">--</p>
+                    <p class="newMonth">--</p>
+                    <p class="newYear">--</p>
                 </div>
                 <div class="time">
-                    <p>years</p>
-                    <p>month</p>
                     <p>days</p>
+                    <p>months</p>
+                    <p>years</p>
                 </div>
             </div>
         </div>

@@ -14,15 +14,16 @@ body {
   display: flex;
   flex-direction: column;
   background-color: hsl(0, 0%, 100%);
-  width: 150dvh;
+  width: 120dvh;
   height: 70dvh;
   margin: auto;
+  margin-top: 5dvh;
   border-radius: 10px 10px 100px 10px;
 }
 #container .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 5px;
 }
 #container .card-grid .card {
   margin-left: 5vh;
@@ -36,6 +37,7 @@ body {
 #container .card-grid .card input {
   height: 7dvh;
   width: 20dvh;
+  border-radius: 1dvh;
 }
 #container .card-grid .card input::-moz-placeholder {
   font-family: "Poppins", serif;
@@ -49,10 +51,36 @@ body {
 }
 #container .card-button {
   margin-top: 2dvh;
-  margin: auto;
   width: 10dvh;
   height: 10dvh;
   border-radius: 50%;
+  border: none;
   color: hsl(0, 0%, 100%);
   background-color: hsl(259, 100%, 65%);
+  position: relative;
+  left: 100dvh;
+  cursor: pointer;
+}
+#container #results {
+  display: flex;
+}
+#container #results .numbers {
+  margin-right: 2dvh;
+  flex: 1;
+}
+#container #results .numbers p {
+  margin-left: 5dvh;
+  font-size: 5rem;
+  color: hsl(259, 100%, 65%);
+}
+#container #results .time {
+  margin-right: 2dvh;
+  flex: 5;
+}
+#container #results .time p {
+  font-size: 4rem;
+  color: hsl(0, 0%, 8%);
+  margin-right: 5dvh;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */
