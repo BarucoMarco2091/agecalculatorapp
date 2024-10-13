@@ -13,8 +13,8 @@ button.addEventListener('click', function calculate() {
         warning.style.color = 'red';
     } else {
         const updatedDay = now.subtract(day, 'days');
-        const updatedMonth = now.subtract(month, 'month');
-        const updatedYear = now.subtract(year, 'year');
+        const updatedMonth = now.subtract(month, 'months');
+        const updatedYear = now.subtract(year, 'years');
         newDay.innerHTML = `${updatedDay.format('DD')}`;
         newDay.style.color = 'hsl(259, 100%, 65%)';
         newMonth.innerHTML = `${updatedMonth.format('MM')}`;
